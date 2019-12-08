@@ -189,10 +189,10 @@ function aiTurn() {
 		cell = document.getElementById(String(x) + String(y));
 		cell.innerHTML = "O";
 	}
-	//Mesure du temps ï¿½ la terminaison de la fonction de recherche
+	//Mesure du temps ? la terminaison de la fonction de recherche
 	var date2 = new Date();
 	console.log(date2);
-	//Mesure de la durÃ© de determination avec l'heuristique 1 .
+	//Mesure de la duré de determination avec l'heuristique 1 .
 	console.log(Math.abs(Number(date2.getMinutes()-date1.getMilliseconds())));
 	document.getElementById("time").innerHTML = "temps mis pour choisir un coup : " + Math.abs(Number(date2.getMinutes()-date1.getMilliseconds())) +" ms" ;
 	document.getElementById("time").className = "time"
